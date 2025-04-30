@@ -1,0 +1,242 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  header {
+    background: #1f1f1f;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #theme-toggle {
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .hero {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .section {
+    padding: 4rem 0;
+  }
+  .filters {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .filter-btn {
+    background: transparent;
+    border: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .filter-btn.active, .filter-btn:hover {
+    background-color: #00aaff;
+    color: #fff;
+  }
+  .gallery {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .item img:hover {
+    transform: scale(1.05);
+  }
+  .social-icons {
+    margin-top: 1rem;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: #f0f0f0;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #00aaff;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #1f1f1f;
+  }
+  .dark-mode {
+    background-color: #fff;
+    color: #111;
+  }
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #eee;
+  }
+  .dark-mode .nav-links a,
+  .dark-mode .social-icons a,
+  .dark-mode #theme-toggle {
+    color: #111;
+  }
+/* ...your existing styles above... */
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .about-photo {
+    flex: 1 1 250px;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color, #00adb5);
+    object-fit: cover;
+  }
+  
+  .about-text {
+    flex: 2 1 300px;
+  }
+  
+  .about-text h2 {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-photo {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: var(--accent-color, #00adb5);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(135deg, #91b0e0, #c2e9fb);
+    padding: 5px;
+    background-clip: padding-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-info {
+    max-width: 600px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-info {
+      text-align: center;
+    }
+  }
+  body {
+    background-image: url('img/black-thread.png');
+    background-color: #0d0d0f;
+    color: #f0f0f0;
+  }
+  
+  /* Light mode filter button fixes */
+.dark-mode .filter-btn {
+  border-color: #111;
+  color: #111;
+}
+
+.dark-mode .filter-btn.active,
+.dark-mode .filter-btn:hover {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+/* About section enhancements */
+.about-info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about .subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
