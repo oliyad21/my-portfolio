@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Graphic Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" title="Toggle Theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Hello, I'm a Graphic Designer</h2>
+        <p>Crafting creative designs in logos, branding, posters, and more.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+          <h2>Hi, I'm Oliyad</h2>
+          <p class="subtitle">A passionate graphic designer based in Ethiopia.</p>
+          <div class="about-wrapper">
+            <div class="about-image">
+              <img src="img/photo_2024-07-21_06-12-46.jpg" alt="Oliyad's Photo" />
+            </div>
+            <div class="about-info">
+              <p>I specialize in logos, branding, social media posts, and posters. I enjoy transforming ideas into beautiful and impactful designs that tell a story.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>My Work</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="logos">Logos</button>
+          <button class="filter-btn" data-filter="posters">Posters</button>
+        </div>
+        <div class="gallery">
+          <div class="item social"><img src="img/Social 1.jpg" alt="Social Media Design" /></div>
+          <div class="item social"><img src="img/Social 2.jpg" alt="Social Media Design" /></div>
+          <div class="item social"><img src="img/Social 3.jpg" alt="Social Media Design" /></div>
+          <div class="item social"><img src="img/Social 4.jpg" alt="Social Media Design" /></div>
+          <div class="item branding"><img src="img/Brand 1.jpg" alt="Branding" /></div>
+          <div class="item branding"><img src="img/Brand 2.jpg" alt="Branding" /></div>
+          <div class="item logos"><img src="img/logo 1.jpg" alt="Logo" /></div>
+          <div class="item logos"><img src="img/logo 2.jpg" alt="Logo" /></div>
+          <div class="item posters"><img src="img/Poster 1.jpg" alt="Poster" /></div>
+          <div class="item posters"><img src="img/Poster 2.jpg" alt="Poster" /></div>
+          <div class="item posters"><img src="img/Poster 3.jpg" alt="Poster" /></div>
+          <div class="item posters"><img src="img/Poster 4.jpg" alt="Poster" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Let’s work together! Reach out on any of these platforms:</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/staryy_oly" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/oliyad-gizaw" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="oliyadgizaw21@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+251909104618"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Oliyad. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
